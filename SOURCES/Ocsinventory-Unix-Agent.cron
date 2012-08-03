@@ -1,0 +1,1 @@
+perl /usr/bin/update-adm.pl ; /usr/bin/ocsinventory-agent --force > /dev/null 2>&1

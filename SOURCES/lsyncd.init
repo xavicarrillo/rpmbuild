@@ -1,0 +1,44 @@
+#! /bin/bash
+#
+# startup file for lsyncd
+#
+# chkconfig: 345 20 80
+# description: Starts and stops the lsyncd deamon
+#
+# /etc/rc.d/init.d/lsyncd
+
+LSYNCD=lsyncd
+LSYNCD_PATH=/usr/bin
+LSYNCD_CONFIG=/etc/lsyncd.conf
+LSYNCD_OPTIONS="-log all"
+
+. /etc/rc.d/init.d/functions
+
+case "$1" in
+  start)
+        echo -n "Starting lsyncd "
+        ${LSYNCD_PATH}/${LSYNCD} $LSYNCD_CONFIG $LSYNCD_OPTIONS
+        echo
+        touch /var/lock/subsys/lsyncd
+        ;;
+  stop)
+        echo -n "Shutting down lsyncd "
+        killproc $LSYNCD
+        echo
+        rm -f /var/lock/subsys/${LSYNCD}
+        rm -f /var/run/${LSYNCD}.pid
+        ;;
+  status)
+        status $LSYNCD
+        ;;
+  restart)
+        $0 stop
+        $0 start
+        ;;
+  *)
+        echo "Usage: $0 {start|stop|restart|status}"
+        exit 1
+esac
+
+exit 0
+
