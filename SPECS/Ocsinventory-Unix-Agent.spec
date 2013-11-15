@@ -62,28 +62,28 @@ perl /usr/bin/update-adm.pl
 
 
 %changelog
-* Thu Mar 23 2012 xcarrillo@riplife.es 2.0.4-2nsa
+* Thu Mar 23 2012 xavi.carrillo@gmail.com 2.0.4-2nsa
 - Add automatic TAG assignation on ocsinventory-agent.cfg (via `hostname`), so that non-puppetized hosts don't need any arrangements.
 - Execute an ocs run so that the machine is inventoried right away
 
-* Thu Mar 01 2012 xcarrillo@riplife.es 2.0.4-1nsa
+* Thu Mar 01 2012 xavi.carrillo@gmail.com 2.0.4-1nsa
 - Upgrade to 2.0.4
 - Fix the daily cronjob file
 
-* Thu Dec 15 2011 xcarrillo@riplife.es 2.0.3-1nsa
+* Thu Dec 15 2011 xavi.carrillo@gmail.com 2.0.3-1nsa
 - Upgrade to 2.0.3
 - Works  on RHEL 4.4
 
-* Mon Sep 30 2011 xcarrillo@riplife.es 2.0.1-2nsa
+* Mon Sep 30 2011 xavi.carrillo@gmail.com 2.0.1-2nsa
 - Minor changes to update-adm.pl
 
-* Mon Sep 21 2011 xcarrillo@riplife.es 2.0.1-1nsa
+* Mon Sep 21 2011 xavi.carrillo@gmail.com 2.0.1-1nsa
 - Version 2.0.1
-- Add Pablo's /usr/bin/update-adm.pl
+- Add /usr/bin/update-adm.pl
 - Add /etc/ocsinventory/ocsinventory-agent.cfg
 
-* Mon Jul 11 2011 xcarrillo@riplife.es 2.0-1nsa
+* Mon Jul 11 2011 xavi.carrillo@gmail.com 2.0-1nsa
 - Version 2.0
 
-* Wed Apr 27 2011 xcarrillo@riplife.es 2.0rc2-0nsa
+* Wed Apr 27 2011 xavi.carrillo@gmail.com 2.0rc2-0nsa
 - Version 2.0rc2

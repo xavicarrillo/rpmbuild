@@ -2,7 +2,7 @@
 
 use XML::Simple;
 
-$file_url = '/var/lib/ocsinventory-agent/http:__inventory-1.mit.esportz.com_ocsinventory/ocsinv.adm';
+$file_url = '/var/lib/ocsinventory-agent/http:__inventory-1.domain.com_ocsinventory/ocsinv.adm';
 $xml = new XML::Simple;
 $data = $xml->XMLin($file_url,forcearray=>1,KeepRoot=>1);
 
